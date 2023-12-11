@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À Propos de [Votre Nom]</title>
+    <title>Dorian Gillot</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <div class="image">
+            <img src="Dorian_gillot.jpg" alt="Dorian Gillot">
+        </div>
         <div class="container">
             <h1>GILLOT Dorian</h1>
-            <p>Chercheur de saveurs</p>
+            <p>ingégnieur cybersécurité</p>
         </div>
     </header>
     <nav>
@@ -24,29 +27,18 @@
             </ul>
         </div>
     </nav>
-    <section>
+    <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <p>Passionné de cuisine depuis mon enfance, je cherche constamment de nouvelles saveurs et expériences culinaires. Mon objectif est de créer des plats uniques qui éveillent les sens.</p>
+            <h3>E-mail</h3>
+            <p>Dorian.gillot@outlook.fr</p>
+            <h3>Téléphone</h3>
+            <p>0633505220</p>
+            <h3>adresse</h3>
+            <p>40 bis boulevard de strasbourg, 49000, Angers</p>
         </div>
     </section>
-    <section id="email">
-        <div class="container">
-            <h2>Contact par E-mail</h2>
-            <form action="envoyer.php" method="post">
-                <label for="email">Adresse e-mail :</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="sujet">Sujet :</label>
-                <input type="text" id="sujet" name="sujet" required>
-    
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-    
-                <button type="submit" class="download-button">Envoyer</button>
-            </form>
-        </div>
-    </section>
+
     
 </body>
 </html>
