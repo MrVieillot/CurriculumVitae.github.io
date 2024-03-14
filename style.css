@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -31,6 +36,52 @@ nav a {
     color: #333;
     font-weight: bold;
 }
+
+/* Ajoutez position: relative; à l'élément parent de .submenu */
+.menu-item {
+    position: relative; /* Cela permet au sous-menu de se positionner correctement */
+}
+
+/* Style pour le sous-menu caché par défaut */
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0; /* Alignez à gauche par rapport à l'élément parent .menu-item */
+    top: 100%; /* Placez-le juste en dessous de l'élément parent .menu-item */
+    background-color:#f8f8f8; /* Ou toute autre couleur de fond que vous préférez */
+    /* Ajoutez d'autres styles comme l'ombre, la bordure, etc., ici */
+}
+
+/* Style pour le sous-menu lors du survol */
+.menu-item:hover .submenu {
+    display: block; /* Montrez le sous-menu */
+}
+
+/* Style pour les liens à l'intérieur du sous-menu */
+.submenu a {
+    display: block;
+    padding: 10px; /* Ajustez l'espacement à votre goût */
+    color: black; /* Ou toute autre couleur de texte que vous préférez */
+    text-decoration: none; /* Retire le soulignement des liens */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne suivante */
+}
+
+/* Style pour les liens lors du survol */
+.submenu a:hover {
+    background-color: #f2f2f2; /* Ou toute autre couleur de survol que vous préférez */
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black; /* Vous pouvez ajuster la couleur */
+    display: inline-block;
+    margin-left: 5px; /* Ajustez selon le besoin */
+}
+
+
 
 section {
     background-color: #fff;
@@ -154,6 +205,7 @@ section {
 #formation .container {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 #formation h2 {
@@ -184,6 +236,13 @@ section {
     margin-bottom: 20px;
 }
 
+#experience a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
 .experience-list {
     list-style: none;
     padding: 0;
@@ -207,6 +266,12 @@ section {
 
 #competences1 h2 {
     margin-bottom: 20px;
+}
+
+#competences1 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 #competences2 .container {
